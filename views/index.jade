@@ -1,5 +1,21 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  H1 Chris Mayer's RESTful API
+  H2 Time Microservice
+  H3 With this microservice, one will be able to:
+  ol 
+    li
+      |Pass a string as a parameter, and it will check to see whether that string contains either a 
+      a(href="https://en.wikipedia.org/wiki/Unix_time") Unix timestamp
+      |  or a natural language date (example: January 21, 2017).
+    li If it does, it returns both the Unix timestamp and the natural language form of that date.
+    li If it does not contain a date or Unix timestamp, it returns null for those properties.
+  H3 Example usage:
+  code localhost:3000/January 21, 2017
+  br
+  code localhost:3000/1484956800
+  
+  H3 Example JSON output:
+  code {"unix":1484956800,"natural":"January 21, 2017"}
+  
