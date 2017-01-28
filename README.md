@@ -11,7 +11,7 @@ With this microservice, one will be able to:
 
 ##Example usage:
 
-<a href="https://mayer-api-microservice.herokuapp.com/January 21, 2017" target="_blank">https://mayer-api-microservice.herokuapp.com/January21,2017 </a>    
+[https://mayer-api-microservice.herokuapp.com/January 21, 2017](https://mayer-api-microservice.herokuapp.com/January 21, 2017)      
 <a href="https://mayer-api-microservice.herokuapp.com/1484956800" target="_blank">https://mayer-api-microservice.herokuapp.com/1484956800</a>
 
 ##Example JSON output:
