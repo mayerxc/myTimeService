@@ -26,7 +26,11 @@ router.get('/:time', function(req, res){
         var natural = new Date(req.params.time);// if NaN then try to turn it into a date
         if (!isNaN(natural)){ //did the date turn into a javascript date number???
             var unix = natural / 1000;
-            var data3 = { unix: unix, natural: req.params.time };
+            var intoNatural = unixToNatural(unix);
+            
+            //using intoNatural instead of req.params.time because returns whatever date format is there 
+            //instead of nice unixToNatural format
+            var data3 = { unix: unix, natural: intoNatural };
             res.json(data3);
         } else {// if it didn't turn into a date format respond with nulls
             var data2 = { unix: null, natural: null };
